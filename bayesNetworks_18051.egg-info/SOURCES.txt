@@ -1,0 +1,9 @@
+README.md
+setup.py
+bayesNetworks_18051/__init__.py
+bayesNetworks_18051/redes.py
+bayesNetworks_18051.egg-info/PKG-INFO
+bayesNetworks_18051.egg-info/SOURCES.txt
+bayesNetworks_18051.egg-info/dependency_links.txt
+bayesNetworks_18051.egg-info/requires.txt
+bayesNetworks_18051.egg-info/top_level.txt
