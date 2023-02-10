@@ -17,15 +17,18 @@ class BayesianNetwork:
         
     def is_fully_described(self, node1, node2):
         def dfs(node, node2, visited):
-            if node == node2:
-                return True
-            visited.add(node)
-            for neighbor in self.edges[node]:
-                if neighbor in visited:
-                    continue
-                if dfs(neighbor, node2, visited):
+            try:
+                if node == node2:
                     return True
-            return False
+                visited.add(node)
+                for neighbor in self.edges[node]:
+                    if neighbor in visited:
+                        continue
+                    if dfs(neighbor, node2, visited):
+                        return True
+                return False
+            except KeyError:
+                return False
         
         return dfs(node1, node2, set())
         
